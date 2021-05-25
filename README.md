@@ -1,5 +1,10 @@
 # Engima Machine
  A simulator for the Engima Machine used by the Germans before and during the Second World War. Written in Python.
+ 
+## Checklist
+1) Finish the coding for the reflector.
+2) Finish the main encryption program on the main page.
+3) Add dectryption functionality. 
 
 The way that the simulator works is by intially asking the user to setup their roters in posiiton. Meaning which index is supposed to be assigned to each letter in the roter. 
 
