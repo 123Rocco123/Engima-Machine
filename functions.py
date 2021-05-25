@@ -33,10 +33,14 @@ rot1 = collections.deque(roter1)
 rot2 = collections.deque(roter2)
 rot3 = collections.deque(roter3)
 
+
+#The function below is the blueprint for the roters, its used to determine how the roters are supposed to act when they are to encrypt a word or letter. 
 def roterfunc(rotor, rot):
+    #The global statements are used to access the variables that were defined outside of the function. 
     global start, rotater1_shift, rotater2_shift, rotater3_shift
     global rot1, rot2, rot3
     
+    #The chosen_roter function is used to determine which roter is currently being used to encrypt the word, and how the roter has to rotate or not. 
     chosen_roter = rotor
 
     #This is the initial positions of the first rotater for the enigma machine. 
@@ -49,6 +53,8 @@ def roterfunc(rotor, rot):
     #The following line is the rotation that occurs on the initial setup of the roters. 
     rot1.rotate(roter_pos * -1)
 
+    #The for loop is used to cycle through the alphabet and see if the letter which is being encrypted matches or not.
+        #If it does match, then the index of that letter will be used to be put in the roter, and whichever letter corresponds to that index will be outputted. 
     for letters in alphabet:
         if test == letters:
             index = alphabet.index(letters)
@@ -61,3 +67,7 @@ def roterfunc(rotor, rot):
     
     if chosen_roter == roter1:
         rotater1_shift += 1
+
+#The function below is used for the reflector.
+def reflector():
+    pass
