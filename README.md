@@ -4,13 +4,14 @@
 ## Checklist
 
 ### Have to Complete
-1) Finish the coding for the reflector.
-2) Finish the main encryption program on the main page.
-3) Add dectryption functionality. 
-4) 2 elements added in initial encryption process. 
+1) Add dectryption functionality. 
+2) 2 or more elements added in initial encryption process. 
 
 ### Completed
 1) Initial encryption functionality has been completed.
+2) Reflector code finished
+3) Main encryption code completed.
+   - The code for the encryption process has been finished, but has to still be optimized.
 
 The way that the simulator works is by intially asking the user to setup their roters in posiiton. Meaning which index is supposed to be assigned to each letter in the roter. 
 
