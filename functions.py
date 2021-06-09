@@ -9,7 +9,7 @@ roter2 = ['H','Q','Z','G','P','J','T','M','O','B','L','N','C','I','F','D','Y','A
 roter3 = ['U','Q','N','T','L','S','Z','F','M','R','E','H','D','P','X','K','I','B','V','Y','G','J','C','W','O','A']
 
 #The dictionary below is the Engima Machine's relfector, Which is the final stage of the first cycle of the encryption.
-relfector1 = {'i':'u',
+relfector1 = {'i':'u', 
               'a':'s',
               'd':'v',
               'g':'l',
@@ -23,7 +23,9 @@ relfector1 = {'i':'u',
               'p':'w'}
 
 start = True
+
 test_word = []
+round_one = []
 
 rotater1_shift = 0
 rotater2_shift = 0
@@ -81,9 +83,11 @@ def roterfunc(rotor, rot):
 #The function below is used for the reflector.
     #The for loop is used to cycle through the pairs in the dictionary, and find the letter which have to be swapped with oneanother.
 def reflector():
-    for pairs in relfector1:
-        for letter in test_word:
-            if letter == pairs:
-                test_word.append
-            elif relfector1[pairs] == letter:
-                test_word
+    #The for loop is to cycle through all of the letter pairs which are found in the reflector.
+    for letters in relfector1:
+        #Since all the letters are lower case in the reflector, we have to make sure that the lower dot-function is used. 
+            #If the pairs aren't found because they're not the key, then we cycle through the values, and append that to the list.
+        if letters == test_word[2].lower():
+            test_word.append(relfector1[letters].upper())
+        elif relfector1[letters] == test_word[2].lower():
+            test_word.append(letters.upper())
